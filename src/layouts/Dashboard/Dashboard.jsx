@@ -72,18 +72,20 @@ class Dashboard extends Component {
       default:
         break;
     }
-    _notificationSystem.addNotification({
-      title: <span data-notify="icon" className="pe-7s-gift" />,
-      message: (
-        <div>
-          Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for
-          every web developer.
-        </div>
-      ),
-      level: level,
-      position: "tr",
-      autoDismiss: 15
-    });
+
+    return // coloquei este return para nao exibir a notificação sempre que eu carregar o sistema
+    // _notificationSystem.addNotification({
+    //   title: <span data-notify="icon" className="pe-7s-gift" />,
+    //   message: (
+    //     <div>
+    //       Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for
+    //       every web developer.
+    //     </div>
+    //   ),
+    //   level: level,
+    //   position: "tr",
+    //   autoDismiss: 15
+    // });
   }
   componentDidUpdate(e) {
     if (

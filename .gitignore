@@ -3,3 +3,5 @@ node_modules
 
 **/*.log
 database.rules.json
+
+firebase/baseConfig.js
